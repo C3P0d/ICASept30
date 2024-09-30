@@ -13,12 +13,13 @@ public class ShiftArray {
 
 		int[] newArray = new int[arr.length];
 
-		for(int i = 0; i < arr.length; i++){
-			int index = (i+shift) % arr.length;
-			newArray[index] = arr[i];
-		}
-
-		arr = newArray;
+       for(int i = 0; i < arr.length; i++){
+       	int index = (i + shift) % arr.length;
+       	newArray[index] = arr[i];
+        }
+      for(int i = 0; i < arr.length; i++) {
+      	arr[i] = newArray[i];
+        }
 	}
 
 
